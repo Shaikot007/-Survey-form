@@ -1,0 +1,158 @@
+body {
+  margin: auto;
+  background-color: aquamarine;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: auto;
+  text-align: center;
+}
+
+#survey-form {
+  margin: auto 20% 5% 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  border: 0px solid;  
+} 
+
+.description {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form-section {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+} 
+
+.submisson-item {
+  margin: 1% 0% 0% 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.element-section-left {
+  margin: auto;
+  width: 50%;
+  text-align: right;
+  padding: 0% 1% 0% 1%;
+}
+
+.element-section-right {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+  padding: 0% 1% 0% 1%;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  border-radius: 5%;
+  font-size: 15px;
+  padding: 0% 0% 0% 2%;
+  width: 65%;
+  border: 2px groove grey;
+}
+
+.dropdown {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+  padding: 0% 1% 0% 1%;
+  border-radius: 5%;
+  font-size: 15px;
+  border: 2px groove grey;
+}
+
+.userChoice {
+  margin: 2% 0% 2% 0%;
+}
+
+.userRatings {
+  width: 5%;
+}
+
+.element-section-left-redio-buttons {
+  margin: 1% 0% 1% 0%;
+  width: 50%;
+  text-align: right;
+  padding: 0% 1% 0% 1%;
+}
+
+.element-section-left-checkboxs {
+  margin: 1% 0% 1% 0%;
+  width: 50%;
+  text-align: right;
+  padding: 0% 1% 0% 1%;
+}
+
+.element-section-left-comments {
+  margin: 1% 0% 1% 0%;
+  width: 50%;
+  text-align: right;
+  padding: 0% 1% 0% 1%;
+}
+
+textarea {
+  margin: 2% 0% 2% 0%;
+  border-radius: 5%;
+  font-size: 15px;
+  padding: 2% 2% 2% 2%;
+  width: 65%;
+  text-align: left;
+  border: 2px groove grey;
+}
+
+.submit-button {
+  margin: auto;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 5%;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  width: 100px;
+  margin: 10% 0% 10% 0%;
+  border: 0px solid;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer {
+  margin: auto;
+  text-align: center;
+  font-family: 'Nova Flat', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {font-size: 25px;}
+  .description {font-size: 20px;}
+  #survey-form {margin: 0% 1% 0% 1%; border-radius: 2%; border: 0px solid;} 
+  label {font-size: 12px;}
+  input {font-size: 12px; width: 75%; border: 1px groove grey;}
+  .dropdown {font-size: 12px; width: 50%; border: 1px groove grey;}
+  .userRatings {width: 5%;}
+  .userRatings {transform: scale(1);}
+  textarea {font-size: 12px; width: 75%; border: 1px groove grey;}
+  #submit {font-size: 12px; height: 25px; width: 60px;}
+  .footer {font-size: 15px;}
+} 
+
+
+@media only screen and (max-width: 768px) {
+  #survey-form {margin: 0% 1% 0% 1%;}
+} 
