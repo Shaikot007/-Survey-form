@@ -62,13 +62,13 @@ input {
   border-radius: 5%;
   font-size: 15px;
   padding: 0% 0% 0% 2%;
-  width: 65%;
+  width: 80%;
   border: 2px groove grey;
 }
 
 .dropdown {
   margin: auto;
-  width: 50%;
+  width: 60%;
   text-align: left;
   padding: 0% 1% 0% 1%;
   border-radius: 5%;
@@ -102,7 +102,7 @@ input {
   margin: 1% 0% 1% 0%;
   width: 50%;
   text-align: right;
-  padding: 0% 1% 0% 1%;
+  padding: 1% 1% 1% 1%;
 }
 
 textarea {
@@ -110,7 +110,7 @@ textarea {
   border-radius: 5%;
   font-size: 15px;
   padding: 2% 2% 2% 2%;
-  width: 65%;
+  width: 80%;
   text-align: left;
   border: 2px groove grey;
 }
@@ -143,21 +143,34 @@ textarea {
   color: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+  h1 {font-size: 20px;}
+  .description {font-size: 18px;}
+  #survey-form {margin: 0% 1% 0% 1%; border-radius: 2%; border: 0px solid;} 
+  label {font-size: 12px;}
+  input {font-size: 12px; width: 95%; border: 1px groove grey;}
+  input::placeholder {font-size: 11px;}
+  .dropdown {font-size: 12px; width: 90%; border: 1px groove grey;}
+  .userRatings {width: 5%;}
+  .userRatings {transform: scale(1);}
+  textarea {font-size: 12px; width: 90%; padding: 6% 2% 6% 2%; border: 1px groove grey;}
+  textarea::placeholder {font-size: 11px;}
+  #submit {font-size: 12px; height: 25px; width: 60px;}
+  .footer {font-size: 12px;}
+} 
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   h1 {font-size: 25px;}
   .description {font-size: 20px;}
   #survey-form {margin: 0% 1% 0% 1%; border-radius: 2%; border: 0px solid;} 
   label {font-size: 12px;}
   input {font-size: 12px; width: 75%; border: 1px groove grey;}
-  .dropdown {font-size: 12px; width: 50%; border: 1px groove grey;}
+  input::placeholder {font-size: 12px;}
+  .dropdown {font-size: 12px; width: 55%; border: 1px groove grey;}
   .userRatings {width: 5%;}
   .userRatings {transform: scale(1);}
-  textarea {font-size: 12px; width: 75%; border: 1px groove grey;}
+  textarea {font-size: 12px; width: 75%; padding: 4% 2% 4% 2%; border: 1px groove grey;}
+  textarea::placeholder {font-size: 12px;}
   #submit {font-size: 12px; height: 25px; width: 60px;}
-  .footer {font-size: 15px;}
-} 
-
-
-@media only screen and (max-width: 768px) {
-  #survey-form {margin: 0% 1% 0% 1%;}
+  .footer {font-size: 14px;}
 } 
