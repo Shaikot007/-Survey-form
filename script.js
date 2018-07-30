@@ -1,4 +1,4 @@
-// coded by @SamAI-Software
+// coded by @Shaikot
 const projectName = 'survey-form';
 localStorage.setItem('example_project', 'Survey Form');
 

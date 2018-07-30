@@ -132,13 +132,17 @@ textarea {
   text-align: center;
 }
 
-.footer {
+footer {
   margin: auto;
   text-align: center;
   font-family: 'Nova Flat', cursive;
 }
 
-.footer a {
+footer p {
+  font-size: 18px;
+}
+
+footer p a {
   text-decoration: none;
   color: black;
 }
