@@ -2,69 +2,64 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Survey Form">
-    <meta name="keywords" content="Survey Form">
-    <meta name="author" content="Fozlul Haq (Shaikot)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Survey Form">
+  <meta name="keywords" content="Survey Form">
+  <meta name="author" content="Fozlul Haq (Shaikot)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Survey Form</title>
+  <title>Survey Form</title>
 
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
-    <!-- Optional Bootstrap theme -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <!-- Optional Bootstrap theme -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <div class="title">
     <h1 id="title">Survey Form</h1>
   </div>
-
   <form id="survey-form">
-    
     <div class="description">
       <p id="description">Let us know how we can improve freeCodeCamp</p>
     </div>
-
     <div class="form-section">
-
       <div class="submisson-item">
         <div class="element-section-left">
           <label for="name" id="name-label">Name:</label>
         </div>
         <div class="element-section-right">
-          <input type="text" name="name" for="name" id="name" style="height:30px" placeholder="Enter your name" required>
+          <input type="text" name="name" for="name" id="name" style="height:30px" placeholder="Enter your name"
+            required>
         </div>
-      </div>  
-
+      </div>
       <div class="submisson-item">
         <div class="element-section-left">
           <label for="email" id="email-label">E-mail:</label>
         </div>
         <div class="element-section-right">
-          <input type="email" name="email" for="email" id="email" style="height:30px" placeholder="Enter your e-mail address" required>
+          <input type="email" name="email" for="email" id="email" style="height:30px"
+            placeholder="Enter your e-mail address" required>
         </div>
-      </div> 
-      
+      </div>
       <div class="submisson-item">
         <div class="element-section-left">
           <label for="number" id="number-label">Age:</label>
         </div>
         <div class="element-section-right">
-          <input type="number" min="1" max="125" name="number" for="number" id="number" style="height:30px" placeholder="Enter your age" required>
+          <input type="number" min="1" max="125" name="number" for="number" id="number" style="height:30px"
+            placeholder="Enter your age" required>
         </div>
       </div>
-      
       <div class="submisson-item" id="dropdown">
         <div class="element-section-left">
           <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
@@ -77,13 +72,13 @@
             <option value="learner">Full time learner</option>
             <option value="preferNo">Prefer not to say</option>
             <option value="other">Other</option>
-          </select> 
+          </select>
         </div>
       </div>
-      
       <div class="submisson-item" id="redio-buttons">
         <div class="element-section-left-redio-buttons">
-          <label for="redio-buttons" id="redio-buttons-label">How likely is that you would recommend freeCodeCamp to a friend?</label>
+          <label for="redio-buttons" id="redio-buttons-label">How likely is that you would recommend freeCodeCamp to a
+            friend?</label>
         </div>
         <div class="element-section-right">
           <div class="userChoice">
@@ -101,8 +96,7 @@
             </div>
           </div>
         </div>
-      </div> 
-      
+      </div>
       <div class="submisson-item" id="dropdown-choice">
         <div class="element-section-left">
           <label for="dropdown-choice" id="dropdown-choice-label">What do you like most in freeCodeCamp:</label>
@@ -115,13 +109,13 @@
             <option value="community">Community</option>
             <option value="openSource">Open source</option>
             <option value="other">Other</option>
-          </select> 
+          </select>
         </div>
       </div>
-
       <div class="submisson-item" id="checkboxs">
         <div class="element-section-left-checkboxs">
-          <label for="checkboxs" id="checkboxs-label">Things that should be improved in the future<br>(Check all that apply):</label>
+          <label for="checkboxs" id="checkboxs-label">Things that should be improved in the future<br>(Check all that
+            apply):</label>
         </div>
         <div class="element-section-right">
           <div class="userChoice">
@@ -171,34 +165,27 @@
             </div>
           </div>
         </div>
-      </div> 
-
+      </div>
       <div class="submisson-item" id="comments">
         <div class="element-section-left-comments">
           <label for="comments" id="comments-label">Any comments or suggestions?</label>
         </div>
         <div class="element-section-right">
-          <textarea type="text" name="comments" for="comments" style="height: 100px; resize: vertical;" placeholder="Enter your comment here..."></textarea>
+          <textarea type="text" name="comments" for="comments" style="height: 100px; resize: vertical;"
+            placeholder="Enter your comment here..."></textarea>
         </div>
-      </div>  
-
+      </div>
       <div class="submit-button">
         <button id="submit" type="submit">Submit</button>
-      </div>  
-
+      </div>
     </div>
-
   </form>
-
   <footer>
     <p>Made by <a href="https://github.com/Shaikot007" target="_blank">Shaikot</a></p>
   </footer>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-  </script>
-
-  <script src="./script.js">
-  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 
